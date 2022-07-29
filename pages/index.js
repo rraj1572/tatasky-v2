@@ -71,8 +71,7 @@ export default function Home() {
 
     let res = {};
 
-    fetch("https://fast-dawn-89938.herokuapp.com/" + "https://kong-tatasky.videoready.tv/rest-api/pub/api/v1/rmn/" + rmn + "/otp", requestOptions)
-
+    fetch("https://cors.code9.workers.dev/?" + "https://kong-tatasky.videoready.tv/rest-api/pub/api/v1/rmn/" + rmn + "/otp", requestOptions)
       .then(response => response.text())
       .then(result => {
         res = JSON.parse(result);
@@ -136,7 +135,7 @@ export default function Home() {
 
     let res = {};
 
-       fetch("https://fast-dawn-89938.herokuapp.com/" + "https://kong-tatasky.videoready.tv/rest-api/pub/api/v2/login/ott", requestOptions)
+    fetch("https://cors.code9.workers.dev/?" + "https://kong-tatasky.videoready.tv/rest-api/pub/api/v2/login/ott", requestOptions)
       .then(response => response.text())
       .then(result => {
         // debugger;
