@@ -168,8 +168,8 @@ const generateM3u = async (ud) => {
                     m3uStr += '#EXTINF:-1  tvg-id=' + chansList[i].channelMeta.id.toString() + '  ';
                     m3uStr += 'tvg-logo=' + chansList[i].channelMeta.logo + '   ';
                     m3uStr += 'group-title=' + chansList[i].channelMeta.genre[0] + ',   ' + chansList[i].channelMeta.channelName + '\n';
-                    m3uStr += '#KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha' + '\n';
-                    m3uStr += '#KODIPROP:inputstream.adaptive.license_key=' + chansList[i].detail.dashWidewineLicenseUrl + '&ls_session=';
+                    m3uStr += '#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey' + '\n';
+                    m3uStr += '#KODIPROP:inputstream.adaptive.license_key=https://rrjiotvweb.azurewebsites.net/web/results.php?key=&keyid=';
                     m3uStr += jwt.token + '\n';
                     m3uStr += chansList[i].detail.dashWidewinePlayUrl + '\n\n';
                 }
